@@ -39,3 +39,5 @@ To address the business question, please consider the following scenarios:
 1. DELIVERABLE
 
 Design one or more approaches that are capable of addressing the business question. Demonstrate the efficiency &amp; robustness of your approach(es).
+
+![projects execution order](https://github.com/achiappo/ProjectPlanning-datascience-challenge/blob/main/project_planning.png?raw=true)
