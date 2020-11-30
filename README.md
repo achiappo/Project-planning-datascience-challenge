@@ -5,11 +5,11 @@ Solution to a Data Science challenge aimed at optimising project planning in an 
 
 Imagine an Oil &amp; Gas operator with a portfolio of projects to execute, faced with the decision on _how to sequence__these_ in time. Each project has _project attributes_ such as a production profile (correlating with how much revenuewill be generated over time), a maturity (indicating from when onwards a project is ready for execution), and the type of hydrocarbon that will be produced (Oil or Gas).
 
-1. BUSINESS QUESTION
+2. BUSINESS QUESTION
 
 How to _optimally plan this sequence of projects,_ i.e. _in what sequence should I execute which projects from my__total portfolio of available projects_?
 
-1. GIVEN
+3. GIVEN
 
 Assume the following:
 
@@ -36,7 +36,7 @@ To address the business question, please consider the following scenarios:
 - Scenario 1: optimize the project sequence for maximum Oil production in 2021-2025.
 - Scenario 2: optimize the project sequence for maximum Oil production in 2021-2025 with a desire that gas remains as long as possible around 1M m3/d from 2021 onwards.
 
-1. DELIVERABLE
+4. DELIVERABLE
 
 Design one or more approaches that are capable of addressing the business question. Demonstrate the efficiency &amp; robustness of your approach(es).
 
