@@ -1,55 +1,41 @@
 # Project-planning-datascience-challenge
 Solution to a Data Science challenge aimed at optimising project planning in an industry
 
-WHITE SPACE ENERGY
-
-CODING CHALLENGE
-# :
- LOGISTICS
-
 1. CONTEXT
 
-Imagine an Oil &amp; Gas operator with offshore assets (e.g. platforms). These assets require regular visits from staff to carry out safety inspections, maintenance activities, interventions, etc. The _planning_ of these visits is often complex due to different _value drivers_ (e.g., not all activities are equally important and/or urgent) and _uncertainties_ (e.g., weather may change on a daily basis and/or transport vehicles may be temporarily out of service).
+Imagine an Oil &amp; Gas operator with a portfolio of projects to execute, faced with the decision on _how to sequence__these_ in time. Each project has _project attributes_ such as a production profile (correlating with how much revenuewill be generated over time), a maturity (indicating from when onwards a project is ready for execution), and the type of hydrocarbon that will be produced (Oil or Gas).
 
 1. BUSINESS QUESTION
 
-How to _optimally allocate staff to transport vehicles_ (e.g. helicopters), if the aim is to meet demand with maximum vehicle efficiency whilst being robust against uncertainty?
+How to _optimally plan this sequence of projects,_ i.e. _in what sequence should I execute which projects from my__total portfolio of available projects_?
 
 1. GIVEN
 
 Assume the following:
 
-3.1 SUPPLY OF STAFF
+3.1 PORTFOLIO
 
-- The total number of available staff varies from day to day. Assume the total staff count can be described with a gaussian distribution with mean 60 and standard deviation 20.
-- Staff are organized in teams with team sizes varying between 1 and 8. Teams cannot be split.
+A portfolio with projects to be planned is provided here as an Excel table
 
-3.2 SUPPLY OF VEHICLES
+Every project has the following properties:
 
-- The operator has 4 helicopters. Two of them can carry 25 staff each, the others can carry 15 staff each.
-- Helicopters can stop at more than 1 location within a single trip.
-- Flight time is assumed negligible.
+- its name
+- whether it&#39;s an Oil or Gas project
+- the earliest date the project can be executed (&#39;earliest spud year&#39;)
+- how long it takes to execute (&#39;duration&#39;)
+- its production profile (how much Oil/Gas is produced, i.e. how much revenue will this project generate)
 
-3.3 DEMAND
+All projects are assumed to have the same cost profile.
 
-- The operator has 10 offshore locations that need maintaining.
-- Demand across locations varies uniformly on a daily basis. That is, each day demand is randomly distributed across all locations.
+Note: The earliest spud year is not necessarily the year of execution – it&#39;s the _earliest possible_ year of execution. (The actual year of execution is a variable to be optimized by you.)
 
-- Each team is assigned to one offshore location. Multiple teams may be assigned to the same location, but a single team is never assigned to more than one location.
+3.2 OPTIMIZATION
 
-3.4 OPTIMIZATION
+To address the business question, please consider the following scenarios:
 
-- The operator&#39;s aim is to allocate as much staff as possible with as few helicopters as possible.
+- Scenario 1: optimize the project sequence for maximum Oil production in 2021-2025.
+- Scenario 2: optimize the project sequence for maximum Oil production in 2021-2025 with a desire that gas remains as long as possible around 1M m3/d from 2021 onwards.
 
 1. DELIVERABLE
 
 Design one or more approaches that are capable of addressing the business question. Demonstrate the efficiency &amp; robustness of your approach(es).
-
-_Tips_
-
-- Consider the _robustness_ of your approach(es) against the assumptions provided above and any additional assumptions you have made.
-
-- Think of how to _communicate_ your findings: how do you convince the decision maker (customer) of your approach(es)?
-
-WHITE SPACE ENERGY
-
