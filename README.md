@@ -1,6 +1,6 @@
 # Project-planning-datascience-challenge
 Solution to a Data Science challenge aimed at optimising project planning in an industry  
-For a detailed descriptionn of the problem, refer to *challenge_statement.pdf*
+A description of the problem follows below; for a more detailed version, refer to *challenge_statement.pdf*
 
 1. CONTEXT
 
